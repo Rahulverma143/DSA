@@ -2,19 +2,14 @@ package leetcode;
 
 //  2. Third Maximun Number 
 public class Third_Maximun_Number_414 {
-
     public static void main(String[] args) {
 
         int[] nums = {2, 2, 3, 1};
-
         int firstMax = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;
         int thirdMax = Integer.MIN_VALUE;
-
         int uniqueCount = 0;
-
         for (int i = 0; i < nums.length; i++) {
-
             int num = nums[i];
 
             if (num == firstMax || num == secondMax || num == thirdMax)
