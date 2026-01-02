@@ -1,22 +1,43 @@
-package leetcode;
+//package leetcode;
+//
+////  4. Array Partition 
+//
+//import java.util.Arrays;
+//
+//public class Array_Partition_561 {
+//
+//	    public static void main(String[] args) {
+//
+//	        int[] nums = {1, 4, 3, 2};   
+//
+//	        Arrays.sort(nums);
+//
+//	        int sum = 0;
+//	        for (int i = nums.length - 2; i >= 0; i -= 2) {
+//	            sum += nums[i];
+//	        }
+//
+//	        System.out.println("Result " + sum);
+//	    }
+//	}
 
-//  4. Array Partition 
+package leetcode;
 
 import java.util.Arrays;
 
 public class Array_Partition_561 {
 
-	    public static void main(String[] args) {
+    public static void main(String[] args) {
 
-	        int[] nums = {1, 4, 3, 2};   
+        int[] nums = {1, 4, 3, 2};
 
-	        Arrays.sort(nums);
+        Arrays.sort(nums);
+        int sum = 0;
 
-	        int sum = 0;
-	        for (int i = nums.length - 2; i >= 0; i -= 2) {
-	            sum += nums[i];
-	        }
+        for (int i = 0; i < nums.length; i += 2) {
+            sum += nums[i];
+        }
 
-	        System.out.println("Result " + sum);
-	    }
-	}
+        System.out.println("Maximum Sum of Min Pairs is : " + sum);
+    }
+}
